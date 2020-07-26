@@ -46,3 +46,37 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* end of reset */
+
+/*beginning of marketing page css */
+html{
+	font-size:62.5%;
+	font-family: 'Montserrat', sans-serif;
+}
+header{
+	background-color:#1a3c40;
+	padding:2%;
+}
+
+h1{
+    font-size: 5rem;
+	color:#307672;
+	font-family: 'Kalam', cursive;
+}
+nav{
+	display:flex;
+	font-size:2rem;
+	justify-content:flex-end;
+	margin:1% 10%;
+	
+}
+nav a{
+	color:#e4eddb;
+	text-decoration:none;
+	border:2px solid #e4eddb;
+	border-radius:10px;
+	background-color:#144d53;
+	margin: 0 2%;
+	padding:1%;
+}
