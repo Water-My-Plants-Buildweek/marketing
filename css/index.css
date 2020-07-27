@@ -63,16 +63,17 @@ header{
 }
 
 h1{
-    font-size: 6rem;
+    font-size: 5rem;
 	color:#307672;
 	font-family: 'Kalam', cursive;
 	margin:0 4%;
 }
 nav{
 	display:flex;
+	flex-direction: column;
 	font-size:2rem;
-	justify-content:flex-end;
-	margin:1% 10%;
+	margin:2% 15%;
+	text-align:center;
 	
 }
 nav a{
@@ -81,8 +82,8 @@ nav a{
 	border:2px solid #e4eddb;
 	border-radius:10px;
 	background-color:#144d53;
-	margin: 0 2%;
-	padding:1%;
+	margin: 1.5% 2%;
+	padding:1.5%;
 }
 nav a:hover{
 	background-color:#e4eddb;
@@ -106,17 +107,17 @@ nav a:hover{
 	font-weight:bold;
 }
 .markBody img{
+	width:80%;
 	border-radius:10px;
-	width:40%;
-	margin:2% 30%;
+	margin:2% 10%;
 }
 .markBody div{
 	padding:1% 0;
 }
 .markBody p{
 	padding:.5%;
-	width:38%;
-	margin:6% 31%;
+	width:80%;
+	margin:6% 10%;
 	text-align: center;
 	font-size:2rem;
 	font-weight: bold;
@@ -141,12 +142,18 @@ footer{
 	background-size: cover;
 	background-attachment: fixed;
 }
+.title {
+	
+	text-align:center;
+	font-weight:bold;
+	padding:2%;
+}
 .aboutBody div{
 	display:flex;
 	flex-direction:column;
 	flex-wrap:wrap;
 	border:2px solid #e4eddb;
-	margin:0 35% 2%;
+	margin:0 10% 2%;
 	border-radius:10px;	
 	padding:2%;
 }
@@ -157,7 +164,7 @@ footer{
 }
 
 .aboutBody h2{
-	font-size:2rem;
+	font-size:3rem;
 	color: #e4eddb;
 	text-align:center;
 	margin:0 0 2%;
@@ -166,4 +173,21 @@ footer{
 	font-size:1.8rem;
 	color: #e4eddb;
 	text-align:center;
+}
+
+/* media tags */
+@media(min-width:700px){
+	nav {
+		display:flex;
+		flex-direction:row;
+		text-align:center;
+		justify-content:flex-end;
+		
+	}
+	.aboutBody div{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		width:20%;
+	}
 }
