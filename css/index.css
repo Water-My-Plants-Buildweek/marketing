@@ -203,6 +203,7 @@ footer{
 }
 @media(min-width:1000px){
 	.markBody p{
+		padding:2%;
 		width:75%;
 	}
 	.markBody img{
