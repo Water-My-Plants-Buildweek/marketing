@@ -67,6 +67,8 @@ h1{
 	color:#307672;
 	font-family: 'Kalam', cursive;
 	margin:2% 4%;
+	text-shadow: 3.5px 3.5px 3.5px #e4eddb;
+	font-weight: bold;
 }
 nav{
 	display:flex;
@@ -84,10 +86,12 @@ nav a{
 	background-color:#144d53;
 	margin: 1.5% 2%;
 	padding:1.5%;
+	box-shadow: 5px 5px 5px #307673dc;
 }
 nav a:hover{
 	background-color:#e4eddb;
 	color:#144d53;
+	box-shadow: 5px 5px 5px #307673dc;
 }
 
 /*body area of marketing page */
@@ -111,6 +115,7 @@ nav a:hover{
 	width:80%;
 	border-radius:10px;
 	margin:2% 10%;
+	box-shadow: 10px 10px 10px #144d53dc;
 }
 .markBody div{
 	padding:1% 0;
@@ -127,6 +132,7 @@ nav a:hover{
 	border:2px solid #e4eddb;
 	background-color:#144d53;
 	border-radius:10px;
+	box-shadow: 10px 10px 10px #144d53dc;
 }
 
 
@@ -134,6 +140,13 @@ nav a:hover{
 /* footer area */
 footer{
 	padding:2%;
+	
+}
+footer nav a{
+	box-shadow: 5px 5px 5px #144d53dc;
+}
+footer nav a:hover{
+	box-shadow: 5px 5px 5px #144d53dc;
 }
 
 /* Body of the About page */
@@ -158,6 +171,7 @@ footer{
 	border-radius:10px;	
 	padding:2%;
 	background-color:rgba(196, 221, 223, 0.329);
+	box-shadow: 10px 10px 10px #307673dc;
 }
 .imgContainer{
 	display:flex;
@@ -176,6 +190,7 @@ footer{
 	color: #e4eddb;
 	text-align:center;
 	margin:0 0 4%;
+	text-shadow: 3px 3px 3px #307673dc;
 }
 .aboutBody h3{
 	font-size:1.8rem;
@@ -187,7 +202,10 @@ footer{
 }
 
 /* media tags */
-@media(min-width:650px){
+@media(min-width:600px){
+	h1{
+		font-size:6rem;
+	}
 	nav {
 		display:flex;
 		flex-direction:row;
@@ -200,13 +218,45 @@ footer{
 		flex-wrap:wrap;
 		width:25%;
 	}
+	footer nav a{
+		box-shadow: 6px 6px 6px #144d53dc;
+	}
+	footer nav a:hover{
+		box-shadow: 6px 6px 6px #144d53dc;
+	}
+}
+@media(min-width:800px){
+	h1{
+		font-size:7rem;
+	}
+	.aboutBody h2{
+		font-size:4rem;
+	}
+	footer nav a{
+		box-shadow: 8px 8px 8px #144d53dc;
+	}
+	footer nav a:hover{
+		box-shadow: 8px 8px 8px #144d53dc;
+	}
 }
 @media(min-width:1000px){
+	h1{
+		font-size:8rem;
+	}
+	.aboutBody h2{
+		font-size:5rem;
+	}
 	.markBody p{
 		padding:2%;
 		width:75%;
 	}
 	.markBody img{
 		width:75%;
+	}
+	footer nav a{
+		box-shadow: 10px 10px 10px #144d53dc;
+	}
+	footer nav a:hover{
+		box-shadow: 10px 10px 10px #144d53dc;
 	}
 }
